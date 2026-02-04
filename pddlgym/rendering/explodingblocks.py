@@ -66,7 +66,7 @@ def draw_table(ax, width, table_height, table_destroyed):
         linewidth=1, edgecolor=(0.2,0.2,0.2), facecolor=(0.5,0.2,0.0))
     ax.add_patch(rect)
     if table_destroyed:
-        mymarker = ax.scatter(width / 2, table_height / 2, s=300, c='black', marker='x')
+        mymarker = ax.scatter(width / 2, table_height / 2, s=300, c='black', marker='x', zorder=10)
         ax.add_artist(mymarker)
 
 def draw_robot(ax, robot_width, robot_height, midx, midy, holding, block_width, block_height):
